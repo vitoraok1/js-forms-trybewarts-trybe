@@ -102,6 +102,12 @@ h1 {
   color: rgb(50, 167, 145);
 }
 
+.btn-custom:disabled {
+  background-color: rgb(50, 167, 145);
+  color: rgb(243, 236, 213);
+  border: none;
+}
+
 footer {
   background-color: rgb(39, 39, 39);
   height: 100px;
