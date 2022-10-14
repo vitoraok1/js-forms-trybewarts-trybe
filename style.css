@@ -1,9 +1,15 @@
+* , *:after , *:before {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(50, 167, 145);
   box-shadow: 1px 1px 3px grey;
+  padding: 5px 0;
 }
 
 .logo-title {
@@ -12,4 +18,28 @@
 
 #trybewarts-header-title {
   color: white;
+}
+
+#main-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#fullscreen-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -10;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
