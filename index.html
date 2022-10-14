@@ -34,20 +34,20 @@
 
     <div class="form-container">
       <form id="evaluation-form" class="p-md-4">
-        <div class="row">
-          <div class="p-4 p-md-3 col-12 col-md-6">
+        <div class="row g-0 py-1">
+          <div class="pe-md-3 col-12 col-md-6">
             <input type="text" class="form-control" id="input-name" placeholder="Nome">
           </div>
-          <div class="p-4 p-md-3 col-12 col-md-6">
+          <div class="col-12 col-md-6">
             <input type="text" class="form-control" id="input-lastname" placeholder="Sobrenome">
           </div>
         </div>
 
-        <div class="row">
-          <div class="p-4 p-md-3 col-12 col-md-6">
+        <div class="row g-0 py-1">
+          <div class="col-12 col-md-6 pe-md-3">
             <input type="email" class="form-control" id="input-email" placeholder="Email">
           </div>
-          <div class="p-4 p-md-3 col-12 col-md-6">
+          <div class="col-12 col-md-6">
             <select id="house" class="form-select">
               <option selected>Escolha sua casa</option>
               <option id="gitnoria-house">Gitnória</option>
@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <div class="row g-0 radios">
+        <div class="row g-0 radios py-2">
           <div class="col-12 col-md-6">
             <div>
               <label id="label-family">Qual é sua família?</label>
@@ -82,7 +82,51 @@
               </label>
             </div>
           </div>
-          <div></div>
+          <div class="col-12 col-md-6">
+            <div>
+              <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            </div>
+            <div class="row g-0">
+              <div class="form-check col-md-4">
+                <input class="form-check-input subject" type="checkbox" id="hofs" value="HoFs">
+                <label class="form-check-label" for="hofs">
+                  HoFs
+                </label>
+              </div>
+              <div class="form-check col-md-4">
+                <input class="form-check-input subject" type="checkbox" id="jest" value="Jest">
+                <label class="form-check-label" for="jest">
+                  Jest
+                </label>
+              </div>
+              <div class="form-check col-md-4">
+                <input class="form-check-input subject" type="checkbox" id="promises" value="Promises">
+                <label class="form-check-label" for="promises">
+                  Promises
+                </label>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="form-check col-md-4">
+                <input class="form-check-input subject" type="checkbox" id="react" value="React">
+                <label class="form-check-label" for="react">
+                  React
+                </label>
+              </div>
+              <div class="form-check col-md-4">
+                <input class="form-check-input subject" type="checkbox" id="sql" value="SQL">
+                <label class="form-check-label" for="sql">
+                  SQL
+                </label>
+              </div>
+              <div class="form-check col-md-4">
+                <input class="form-check-input subject" type="checkbox" id="python" value="Python">
+                <label class="form-check-label" for="python">
+                  Python
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </form>
     </div>
