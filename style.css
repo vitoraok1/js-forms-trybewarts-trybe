@@ -90,6 +90,18 @@ h1 {
   color: white;
 }
 
+.btn-custom {
+  background-color: rgb(50, 167, 145);
+  color: rgb(243, 236, 213);
+  font-family: BluuNextBold, serif;
+  font-size: 1.1rem;
+}
+
+.btn-custom:hover {
+  background-color: rgb(243, 236, 213);
+  color: rgb(50, 167, 145);
+}
+
 footer {
   background-color: rgb(39, 39, 39);
   height: 100px;
