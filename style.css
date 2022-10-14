@@ -15,11 +15,22 @@
 
 body {
   font-family: BluuNextTitling, serif;
+  background-color: rgb(43, 43, 43);
 }
 
 h1 {
   font-family: BluuNextBold, serif;
   margin: 0;
+}
+
+.input-dark , .input-dark:active , .input-dark:focus {
+  background: rgb(43, 43, 43);
+  color: white;
+}
+
+.input-dark:active , .input-dark:focus {
+  background: rgb(43, 43, 43);
+  color: white;
 }
 
 .header {
