@@ -1,11 +1,11 @@
 @font-face {
   font-family: BluuNextTitling;
-  src: url(./assets/BluuNext-Titling.otf);
+  src: url('./assets/BluuNext-Titling.otf');
 }
 
 @font-face {
   font-family: BluuNextBold;
-  src: url(./assets/BluuNext-Bold.otf);
+  src: url('./assets/BluuNext-Bold.otf');
 }
 
 * , *:after , *:before {
@@ -18,7 +18,8 @@ body {
 }
 
 h1 {
-  font-family: BluuNextBold, serif !important;
+  font-family: BluuNextBold, serif;
+  margin: 0;
 }
 
 .header {
@@ -40,7 +41,7 @@ h1 {
 
 #main-container {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 160px);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -82,7 +83,7 @@ footer {
   background-color: rgb(39, 39, 39);
   height: 100px;
   text-align: center;
-  color: #ebebeb;
+  color: rgb(235, 235, 235);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
