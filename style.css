@@ -55,6 +55,10 @@
   background: rgba(39, 39, 39, 0.7);
 }
 
+.radios {
+  color: white;
+}
+
 @media ( max-width : 675px ) {
 
   #evaluation-form {
