@@ -32,21 +32,44 @@
     </div>
 
     <div class="form-container">
+      <form id="form-data" class="p-md-4" hidden>
+        <div class="form-value">
+          <span id="nameValue"></span>
+        </div>
+        <div class="form-value">
+          <span id="emailValue"></span>
+        </div>
+        <div class="form-value">
+          <span id="houseValue"></span>
+        </div>
+        <div class="form-value">
+          <span id="familyValue"></span>
+        </div>
+        <div class="form-value">
+          <span id="subjectsValue"></span>
+        </div>
+        <div class="form-value">
+          <span id="rateValue"></span>
+        </div>
+        <div class="form-value">
+          <span id="commentsValue"></span>
+        </div>
+      </form>
       <form id="evaluation-form" class="p-md-4">
         <div class="row g-0 py-1">
           <div class="pe-md-3 col-12 col-md-6">
-            <input type="text" class="form-control input-dark" id="input-name" placeholder="Nome">
+            <input type="text" class="form-control input-dark" id="input-name" name="name" placeholder="Nome">
           </div>
           <div class="col-12 col-md-6">
-            <input type="text" class="form-control input-dark" id="input-lastname" placeholder="Sobrenome">
+            <input type="text" class="form-control input-dark" id="input-lastname" name="lastName" placeholder="Sobrenome">
           </div>
         </div>
         <div class="row g-0 py-1">
           <div class="col-12 col-md-6 pe-md-3">
-            <input type="email" class="form-control input-dark" id="input-email" placeholder="Email">
+            <input type="email" class="form-control input-dark" id="input-email" name="email" placeholder="Email">
           </div>
           <div class="col-12 col-md-6">
-            <select id="house" class="form-select input-dark">
+            <select id="house" name="house" class="form-select input-dark">
               <option selected>Escolha sua casa</option>
               <option id="gitnoria-house">Gitnória</option>
               <option id="reactpuff-house">Reactpuff</option>
@@ -64,7 +87,7 @@
               <label id="label-family">Qual sua família?</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="family" id="frontend" value="Frontend">
+              <input class="form-check-input" type="radio" id="frontend" name="family" value="Frontend">
               <label class="form-check-label" for="frontend">
                 Frontend
               </label>
@@ -88,19 +111,19 @@
             </div>
             <div class="row g-0">
               <div class="form-check col-md-4">
-                <input class="form-check-input subject" type="checkbox" id="hofs" value="HoFs">
+                <input class="form-check-input subject" type="checkbox" id="hofs" name="hofs" value="HoFs">
                 <label class="form-check-label" for="hofs">
                   HoFs
                 </label>
               </div>
               <div class="form-check col-md-4">
-                <input class="form-check-input subject" type="checkbox" id="jest" value="Jest">
+                <input class="form-check-input subject" type="checkbox" id="jest" name="jest" value="Jest">
                 <label class="form-check-label" for="jest">
                   Jest
                 </label>
               </div>
               <div class="form-check col-md-4">
-                <input class="form-check-input subject" type="checkbox" id="promises" value="Promises">
+                <input class="form-check-input subject" type="checkbox" id="promises" name="promises" value="Promises">
                 <label class="form-check-label" for="promises">
                   Promises
                 </label>
@@ -108,19 +131,19 @@
             </div>
             <div class="row g-0">
               <div class="form-check col-md-4">
-                <input class="form-check-input subject" type="checkbox" id="react" value="React">
+                <input class="form-check-input subject" type="checkbox" id="react" name="react" value="React">
                 <label class="form-check-label" for="react">
                   React
                 </label>
               </div>
               <div class="form-check col-md-4">
-                <input class="form-check-input subject" type="checkbox" id="sql" value="SQL">
+                <input class="form-check-input subject" type="checkbox" id="sql" name="sql" value="SQL">
                 <label class="form-check-label" for="sql">
                   SQL
                 </label>
               </div>
               <div class="form-check col-md-4">
-                <input class="form-check-input subject" type="checkbox" id="python" value="Python">
+                <input class="form-check-input subject" type="checkbox" id="python" name="python" value="Python">
                 <label class="form-check-label" for="python">
                   Python
                 </label>
@@ -200,7 +223,7 @@
         <div class="row g-0 radios py-2">
           <label class="textarea mb-2">Deixe seu comentário:</label>
           <div class="form-floating text-form">
-            <textarea class="form-control input-dark p-2 mb-1" maxlength="500" style="height: 100px;" id="textarea"></textarea>
+            <textarea class="form-control input-dark p-2 mb-1" name="comments" maxlength="500" style="height: 100px;" id="textarea"></textarea>
             <span id="counter">500/500</span>
           </div>
         </div>
