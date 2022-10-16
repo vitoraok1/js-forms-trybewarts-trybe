@@ -108,6 +108,10 @@ h1 {
   border: none;
 }
 
+.text-form {
+  text-align: right;
+}
+
 footer {
   background-color: rgb(39, 39, 39);
   height: 100px;

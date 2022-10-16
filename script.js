@@ -1,6 +1,7 @@
 const buttonSend = document.getElementById('send-button');
-
 const check = document.getElementById('agreement');
+const count = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
 
 const login = {
   email: 'tryber@teste.com',
@@ -24,8 +25,14 @@ const submitForm = () => {
   sendButton.disabled = !terms.checked;
 };
 
-window.onload = () => {
-  check.addEventListener('change', submitForm);
+const countCharacteres = () => {
+  const characteres = textArea.value.length;
+  const counter = 500 - characteres;
+  count.textContent = `${counter}/500`;
 };
 
-buttonSend.addEventListener('click', alertNotify);
+window.onload = () => {
+  check.addEventListener('change', submitForm);
+  textArea.addEventListener('input', countCharacteres);
+  buttonSend.addEventListener('click', alertNotify);
+};
